@@ -5,7 +5,7 @@ The data file is loaded using `read.csv2`:
 
 
 ```r
-data <- read.csv2(file="activity.csv", header=TRUE, sep=",")
+data <- read.csv2(file="./../activity.csv", header=TRUE, sep=",")
 ```
 It is stored in a data frame called `data`.
 
