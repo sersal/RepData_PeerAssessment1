@@ -100,7 +100,7 @@ k <- new.data$type=="weekend"
 mean.weekend <- tapply(new.data$steps[k], new.data$interval[k], FUN=mean, na.rm=TRUE)
 ```
 Once the means are computed we can represent them:
-```{r two_plots, fig.heigh=6, fig.width=4}
+```{r two_plots, fig.heigh=8, fig.width=6}
 par(mfrow=c(2,1))
 plot(mean.weekend, type="l", xlab="Interval", ylab="Number of steps", main="Weekend")
 plot(mean.weekday, type="l", xlab="Interval", ylab="Number of steps", main="Weekday")
